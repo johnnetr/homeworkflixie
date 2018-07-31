@@ -1,0 +1,45 @@
+[debug] [2018-07-29T12:15:58.410Z] ----------------------------------------------------------------------
+[debug] [2018-07-29T12:15:58.412Z] Command:       /usr/local/Cellar/node/10.5.0_1/bin/node /usr/local/bin/firebase deploy
+[debug] [2018-07-29T12:15:58.413Z] CLI Version:   4.0.0
+[debug] [2018-07-29T12:15:58.413Z] Platform:      darwin
+[debug] [2018-07-29T12:15:58.413Z] Node Version:  v10.5.0
+[debug] [2018-07-29T12:15:58.414Z] Time:          Sun Jul 29 2018 19:15:58 GMT+0700 (Indochina Time)
+[debug] [2018-07-29T12:15:58.414Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-07-29T12:15:58.426Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-07-29T12:15:58.427Z] > authorizing via signed-in user
+[debug] [2018-07-29T12:15:58.429Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-07-29T12:15:58.429Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/jdbHMGTf-ZfqGJKRjQwxv_sbp9slYZm60oUxJwzLIgE',
+  client_id:
+   '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope:
+   'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Sun Jul 29 2018 19:15:58 GMT+0700 (Indochina Time)
+[debug] [2018-07-29T12:15:58.663Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-29T12:15:58.712Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/johnnytran-coderschool  
+  
+ Sun Jul 29 2018 19:15:58 GMT+0700 (Indochina Time)
+[debug] [2018-07-29T12:15:59.621Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-29T12:15:59.623Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/johnnytran-coderschool/tokens  
+  
+ Sun Jul 29 2018 19:15:59 GMT+0700 (Indochina Time)
+[debug] [2018-07-29T12:16:00.422Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'johnnytran-coderschool'...
+[info] 
+[info] i  deploying functions, hosting
+[debug] [2018-07-29T12:16:01.574Z] TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received type undefined
+    at assertPath (path.js:39:11)
+    at Object.join (path.js:1157:7)
+    at Config.path (/usr/local/lib/node_modules/firebase-tools/lib/config.js:166:37)
+    at /usr/local/lib/node_modules/firebase-tools/lib/deploy/lifecycleHooks.js:68:38
+    at _chain (/usr/local/lib/node_modules/firebase-tools/lib/deploy/index.js:26:38)
+    at deploy (/usr/local/lib/node_modules/firebase-tools/lib/deploy/index.js:81:10)
+    at Command._action (/usr/local/lib/node_modules/firebase-tools/commands/deploy.js:53:12)
+    at /usr/local/lib/node_modules/firebase-tools/lib/command.js:200:29
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[error] 
+[error] Error: An unexpected error has occurred.
